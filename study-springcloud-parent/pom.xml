@@ -17,6 +17,7 @@
 
     <modules>
         <module>../eureka-server</module>
+        <module>../study-provider</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>

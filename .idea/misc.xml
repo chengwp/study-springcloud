@@ -9,12 +9,9 @@
         <option value="$PROJECT_DIR$/springcloud-parent/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/study-springcloud-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/study-provider/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
-  <component name="jwt">
-    <option name="rs256PrivateKeyFile" value="" />
-    <option name="rs256PublicKeyFile" value="" />
-  </component>
 </project>
