@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-springboot-parent/study-springboot-parent.iml" filepath="$PROJECT_DIR$/study-springboot-parent/study-springboot-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/study-springcloud.iml" filepath="$PROJECT_DIR$/.idea/study-springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-springcloud-parent/study-springcloud-parent.iml" filepath="$PROJECT_DIR$/study-springcloud-parent/study-springcloud-parent.iml" />
+    </modules>
+  </component>
+</project>
