@@ -1,0 +1,39 @@
+image: docker:latest  #1
+variables:  #2
+  DOCKER_DRIVER: overlay2
+#  DOCKER_HOST: tcp://192.168.101.4:3375  # docker host，本地可不写
+  EUREKA_SERVER_TAG: 192.168.101.4:5000/chengweiping/eureka-server:0.0.1 # 镜像名称
+  STUDY_PROVIDER_TAG: 192.168.101.4:5000/chengweiping/study-provider:0.0.1
+cache:  #3
+  paths:
+    - eureka-server/target/
+    - study-provider/target/
+#services:  #4
+ #  - docker:dind
+stages:  #5
+  - package
+  - deploy
+maven-package:  #6
+  image: maven:3.5-jdk-8-alpine
+  tags:
+    - study
+  stage: package
+  script:
+    - mvn  -f study-springcloud-parent/pom.xml clean package --settings  .m2/setting.xml  -Dmaven.test.skip=true
+  artifacts:
+    paths:
+      - eureka-server/target/*.jar
+      - study-provider/target/*.jar
+  when: manual
+docker-build:  #7
+  tags:
+    - study
+  stage: deploy
+  script:
+    - echo " start tag ..."
+    - docker build -t $EUREKA_SERVER_TAG  -f  eureka-server/Dockerfile     eureka-server/target
+    - docker build -t $STUDY_PROVIDER_TAG -f  study-provider/Dockerfile    study-provider/target
+    - echo "  end tag ..."
+  only:
+    - master
+  when: manual
