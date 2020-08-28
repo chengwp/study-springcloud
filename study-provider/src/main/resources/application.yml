@@ -1,17 +1,16 @@
 #设置端口号
 server:
-  port: 8070
+  port: 8071
 
-#设置服务的名称
 spring:
-　　　application:
-　　　　name: study-provider
+    application:
+      name: study-provide
 
-#往eureka_service端注册的地址
-　　eureka:
-　　　client:
-　　　　serviceUrl:
-　　　　　defaultZone: http://localhost:8761/eureka/
-
+eureka:
+    instance:
+      hostname: 192.168.101.4
+    client:
+      service-url:
+          default: http://${eureka.instance.hostname}:8761/eureka/
 
 

@@ -12,6 +12,4 @@ WORKDIR /app
 
 EXPOSE 8080
 
-CMD  java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom  -jar  /app/app.jar  \
-
---spring.profiles.active=$ENV
+CMD  java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom  -jar  /app/app.jar
