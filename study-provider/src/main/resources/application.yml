@@ -11,6 +11,6 @@ eureka:
       hostname: 192.168.101.4
     client:
       service-url:
-          default: http://${eureka.instance.hostname}:8761/eureka/
+          default: http://192.168.101.4:8761/eureka/
 
 
