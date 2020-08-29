@@ -1,6 +1,6 @@
 #设置端口号
 server:
-  port: 8071
+  port: 8888
 
 spring:
     application:
@@ -10,7 +10,7 @@ eureka:
     instance:
       hostname: 192.168.101.4
     client:
-      service-url:
-          default: http://192.168.101.4:8761/eureka/
+      serviceUrl:
+         defaultZone: http://192.168.101.4:8761/eureka
 
 
