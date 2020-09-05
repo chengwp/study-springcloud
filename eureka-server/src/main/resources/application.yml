@@ -5,7 +5,7 @@ spring:
      name: eureka-server
 eureka:
   instance:
-    hostname: 192.168.101.4
+    hostname: 192.168.101.3
     prefer-ip-address: true
   server:
     enable-self-preservation: false      # 关闭自我保护模式（默认为打开）
