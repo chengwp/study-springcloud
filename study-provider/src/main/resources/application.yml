@@ -2,48 +2,45 @@
 server:
   port: 8888
 eureka:
-    instance:
-      hostname: 192.168.101.3
-    client:
-      serviceUrl:
-         defaultZone: http://192.168.101.3:8761/eureka
+  instance:
+    hostname: 192.168.101.3
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.101.3:8761/eureka
 # DataSource Config
 spring:
   application:
     name: study-provider
-  hive: #hive数据源
-    url: jdbc:hive2://192.168.101.9:10000/default
-    type: com.alibaba.druid.pool.DruidDataSource
-    username:
-    password:
-    driver-class-name: org.apache.hive.jdbc.HiveDriver
-      # 配置数据源
-  mysql:
-    url: jdbc:mysql://127.0.0.1:3306/study?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false # MySQL在高版本需要指明是否进行SSL连接 解决则加上 &useSSL=false
-    username: root
-    password: 123456
-    # 使用druid数据源
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-  commonconfig: #连接池统一配置，应用到所有的数据源
-    initialSize: 1
-    minIdle: 1
-    maxIdle: 5
-    maxActive: 50
-    maxWait: 10000
-    timeBetweenEvictionRunsMillis: 10000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: select 'x'
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-    maxOpenPreparedStatements: 20
-    filters: stat
-
-management:
-    security:
-      enabled: false
+  datasource:
+    hive: #hive数据源
+      url: jdbc:hive2://192.168.101.9:10000/default
+      type: com.alibaba.druid.pool.DruidDataSource
+      username:
+      password:
+      driver-class-name: org.apache.hive.jdbc.HiveDriver
+        # 配置数据源
+    mysql:
+      url: jdbc:mysql://127.0.0.1:3306/study?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false # MySQL在高版本需要指明是否进行SSL连接 解决则加上 &useSSL=false
+      username: root
+      password: 123456
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+    commonconfig: #连接池统一配置，应用到所有的数据源
+      initialSize: 1
+      minIdle: 1
+      maxIdle: 5
+      maxActive: 50
+      maxWait: 10000
+      timeBetweenEvictionRunsMillis: 10000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      filters: stat
 
 # mybatis-plus相关配置
 mybatis-plus:
