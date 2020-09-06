@@ -11,6 +11,8 @@ public class DataSourceProperties {
 
     final static String DS = "spring.datasource";
 
+    private Map<String,String> mysql;
+
     private Map<String,String> hive;
 
     private Map<String,String> commonConfig;

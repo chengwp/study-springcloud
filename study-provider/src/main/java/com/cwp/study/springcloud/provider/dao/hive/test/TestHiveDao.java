@@ -3,7 +3,6 @@ package com.cwp.study.springcloud.provider.dao.hive.test;
 import com.cwp.study.springcloud.provider.dao.hive.HiveJdbcBaseDaoImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import java.util.Iterator;
 import java.util.List;
@@ -40,7 +39,7 @@ public class TestHiveDao extends HiveJdbcBaseDaoImpl {
     }
 
     public void testInsert() {
-        this.getJdbcTemplate().execute("insert into hive_test(age, username)  values('Neo','Chen')");
+        this.getJdbcTemplate().execute("insert into hive_test(age, username)  values(19,'Chen')");
     }
 
 
