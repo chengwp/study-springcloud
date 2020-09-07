@@ -2,24 +2,31 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="study-consumer" />
         <module name="study-provider" />
+        <module name="study-service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="1.8" />
+      <module name="study-consumer" target="1.8" />
       <module name="study-provider" target="1.8" />
+      <module name="study-service-api" target="1.8" />
       <module name="study-springcloud-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="study-consumer" options="-parameters" />
       <module name="study-provider" options="-parameters" />
+      <module name="study-service-api" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,15 +1,17 @@
-package com.cwp.study.springcloud.provider;
+package com.cwp.study.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication
-public class StudyProviderApplication {
+public class StudyConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(StudyProviderApplication.class, args);
+        SpringApplication.run(StudyConsumerApplication.class, args);
     }
 
 }

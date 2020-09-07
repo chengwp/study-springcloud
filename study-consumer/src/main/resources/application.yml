@@ -1,0 +1,13 @@
+#设置端口号
+server:
+  port: 9999
+eureka:
+  instance:
+    hostname: 192.168.101.3
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.101.3:8761/eureka
+# DataSource Config
+spring:
+  application:
+    name: study-consumer
