@@ -10,11 +10,12 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/consumer/hello")
-public class ConsumerController {
+class ConsumerController {
 
     @Autowired
     private FeignApiService feignApiService;
 
+    @RequestMapping("/test")
     public Map hello(){
         HashMap hashMap=new HashMap();
         String value= feignApiService.hello();

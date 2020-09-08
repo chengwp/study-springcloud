@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: stud-api-gateway
+#设置端口号
+server:
+    port: 6666
+eureka:
+  instance:
+    hostname: 192.168.101.3
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.101.3:8761/eureka
+zuul:
+  routes:
+    api-study-consumer:
+      path: /study-consumer/**
+      serviceId: study-consumer

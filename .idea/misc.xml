@@ -7,10 +7,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springcloud-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/study-springcloud-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/study-provider/pom.xml" />
         <option value="$PROJECT_DIR$/StudyConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/study-springcloud-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/study-api-gateway/pom.xml" />
       </list>
     </option>
   </component>

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="study-api-gateway" />
         <module name="study-consumer" />
         <module name="study-provider" />
         <module name="study-service-api" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="1.8" />
+      <module name="study-api-gateway" target="1.8" />
       <module name="study-consumer" target="1.8" />
       <module name="study-provider" target="1.8" />
       <module name="study-service-api" target="1.8" />
@@ -24,6 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="study-api-gateway" options="-parameters" />
       <module name="study-consumer" options="-parameters" />
       <module name="study-provider" options="-parameters" />
       <module name="study-service-api" options="-parameters" />

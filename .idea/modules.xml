@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/study-consumer/StudyConsumer.iml" filepath="$PROJECT_DIR$/study-consumer/StudyConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-api-gateway/study-api-gateway.iml" filepath="$PROJECT_DIR$/study-api-gateway/study-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-consumer/study-consumer.iml" filepath="$PROJECT_DIR$/study-consumer/study-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-provider/study-provider.iml" filepath="$PROJECT_DIR$/study-provider/study-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-service-api/study-service-api.iml" filepath="$PROJECT_DIR$/study-service-api/study-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/study-springcloud.iml" filepath="$PROJECT_DIR$/.idea/study-springcloud.iml" />
