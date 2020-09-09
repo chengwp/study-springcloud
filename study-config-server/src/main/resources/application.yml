@@ -1,0 +1,19 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: study-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chengwp/study-config.git
+          username:
+          password:
+          clone-on-start: true
+          search-paths:
+            - study-config
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.101.3:8761/eureka/
