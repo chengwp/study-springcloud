@@ -7,7 +7,7 @@ spring:
     config:
       label: master
       name: study-config-server
-      profile: dev
+      profile: test
       uri: http://192.168.101.3:7001
 eureka:
   client:

@@ -21,6 +21,7 @@
         <module>../study-provider</module>
         <module>../study-consumer</module>
         <module>../study-api-gateway</module>
+        <module>../study-config-server</module>
 
     </modules>
     <properties>

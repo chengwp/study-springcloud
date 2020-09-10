@@ -1,6 +1,6 @@
 #设置端口号
 server:
-  port: 9999
+  port: 7003
 eureka:
   instance:
     hostname: 192.168.101.3
