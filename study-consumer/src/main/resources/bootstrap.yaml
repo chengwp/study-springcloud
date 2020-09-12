@@ -13,3 +13,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://192.168.101.3:8761/eureka/
+
+
+###开启bus刷新
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

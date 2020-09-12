@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: study-config-server
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
   cloud:
     config:
       server:
@@ -13,7 +15,18 @@ spring:
           clone-on-start: true
           search-paths:
             - study-config
+    bus:
+        refresh:
+          enabled: true
+management:
+  endpoionts:
+    web:
+      exposure:
+        include: refresh
+
 eureka:
   client:
     service-url:
       defaultZone: http://192.168.101.3:8761/eureka/
+
+
