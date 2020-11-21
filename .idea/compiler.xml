@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="code-generator" />
         <module name="eureka-server" />
         <module name="study-api-gateway" />
         <module name="study-config-server" />
@@ -16,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="code-generator" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="study-api-gateway" target="1.8" />
       <module name="study-config-server" target="1.8" />

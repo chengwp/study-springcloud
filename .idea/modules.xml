@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/code-generator/code-generator.iml" filepath="$PROJECT_DIR$/code-generator/code-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-api-gateway/study-api-gateway.iml" filepath="$PROJECT_DIR$/study-api-gateway/study-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-api-gateway/study-api-gateway.iml" filepath="$PROJECT_DIR$/study-api-gateway/study-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-config-server/study-config-server.iml" filepath="$PROJECT_DIR$/study-config-server/study-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-config-server/study-config-server.iml" filepath="$PROJECT_DIR$/study-config-server/study-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-consumer/study-consumer.iml" filepath="$PROJECT_DIR$/study-consumer/study-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-consumer/study-consumer.iml" filepath="$PROJECT_DIR$/study-consumer/study-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-provider/study-provider.iml" filepath="$PROJECT_DIR$/study-provider/study-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-provider/study-provider.iml" filepath="$PROJECT_DIR$/study-provider/study-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-service-api/study-service-api.iml" filepath="$PROJECT_DIR$/study-service-api/study-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-service-api/study-service-api.iml" filepath="$PROJECT_DIR$/study-service-api/study-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/study-springcloud.iml" filepath="$PROJECT_DIR$/.idea/study-springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-springcloud-parent/study-springcloud-parent.iml" filepath="$PROJECT_DIR$/study-springcloud-parent/study-springcloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-springcloud-parent/study-springcloud-parent.iml" filepath="$PROJECT_DIR$/study-springcloud-parent/study-springcloud-parent.iml" />
     </modules>
   </component>
