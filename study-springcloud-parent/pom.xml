@@ -23,6 +23,7 @@
         <module>../study-api-gateway</module>
         <module>../study-config-server</module>
         <module>../code-generator</module>
+        <module>../api-gateway</module>
 
     </modules>
     <properties>
@@ -38,6 +39,7 @@
                 <artifactId>study-service-api</artifactId>
                 <version>1.0.0</version>
             </dependency>
+            <!-- spring-cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -45,6 +47,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--spring-clould-alibaba -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.1.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-configuration-processor</artifactId>

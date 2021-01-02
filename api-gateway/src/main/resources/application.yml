@@ -1,0 +1,77 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 9191
+  servlet:
+    context-path: /
+
+logging:
+  file: ./server.log
+
+spring:
+  application:
+    name: api-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #让gateway从nacos中获取服务信息
+          lowerCaseServiceId: true # 请求服务是小写的时候改成true（默认为false轻微服务必须是大写）
+      routes:  #路由数组
+        - id: study-provider-web
+          #data-manager路由
+          #   uri: http://study-provider-web:7002  #转发的地址
+          uri: lb://study-provider-web
+          #lb 指的是负载均衡 后面是nacos的服务名
+          order: 1 #路由优先级  数字越小越大
+          predicates:  #断言数组（条件判断，返回值boolean ，转发请求满足条件的）
+            - Path=/study-provider/**
+            # filters: #过滤器 数组 （在请求传递过程中，对请求做修改）
+            #  - StripPrefix=1 #在请求转发之前去掉 gateway的一层路径
+  profiles:
+    active: dev
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+#  resources:
+#    add-mappings: false
+
+
+
+feign:
+  # 为feign整合sentinel
+  sentinel:
+    enabled: true
+
+# 暴露所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# 网关相关属性配置
+api:
+  gateway:
+    # 权限验证白名单设置
+    skipUrls[1]: /api/**
+    skipUrls[3]: **.html
+    skipUrls[4]: /webjars/**
+    skipUrls[5]: /app/**
+    skipUrls[6]: /swagger/**
+    skipUrls[7]: /v2/api-docs
+    skipUrls[8]: /swagger-ui.html
+    skipUrls[9]: /swagger-resources/**

@@ -1,0 +1,6 @@
+# 将服务注册到nacos注册中心
+spring:
+    cloud:
+        nacos:
+            discovery:
+                server-addr: http://nacos.cwp.com/
